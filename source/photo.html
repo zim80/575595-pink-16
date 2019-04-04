@@ -13,7 +13,7 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
+
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a>Главная</a>
@@ -28,26 +28,26 @@
             <a href="#">HTML Academy</a>
           </li>
         </ul>
-      </div>
+
     </nav>
     <b class="page-header__slogan slogan">Фотогафии пользователей</b>
   </header>
 
   <main class="page-main">
-
+    <h1 class="visually-hidden">Pink - Раскрась серые будни</h1>
     <section class="gallery">
       <h2 class="visually-hidden">Галерея</h2>
 
-      <div class="panorama-wrapper">
+      <div class="panorama-wrapper panorama">
         <b class="gallery-slogan slogan">Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?</b>
         <p class=" gallery__picture gallery__panorama">
           <img class="panorama__image image" src="http://placehold.it/150x100" width="150" height="100" alt="Panorama">
         </p>
-        <time class="gallery__date visually-hidden" datetime="2017-09-29">
+        <div class="gallery__comment">
           <cite class="gallery__author-name">Анна</cite>
-          <p class="gallery__time">5 минут назад</p>
-        </time>
+          <span class="gallery__time">(5 минут назад)</span>
+        </div>
         <p class="gallery__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
           перископе, задавайте свои вопросы!</p>
       </div>
@@ -57,65 +57,65 @@
         <ul class="gallery__list">
           <li class="gallery__item">
             <p class=" gallery__picture">
-              <img class="panorama__image image" src="http://placehold.it/150x100" width="150" height="100" alt="Auto">
+              <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100" alt="Auto">
             </p>
-            <time class="gallery__date visually-hidden" datetime="2017-09-29">
+            <div class="gallery__comment">
               <cite class="gallery__author-name">Левон</cite>
               <p class="gallery__time">5 часов назад</p>
-            </time>
+            </div>
             <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           </li>
           <li class="gallery__item">
             <p class=" gallery__picture">
-              <img class="panorama__image image" src="http://placehold.it/150x100" width="150" height="100"
+              <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100"
                 alt="Drumms">
             </p>
-            <time class="gallery__date visually-hidden" datetime="2017-09-29">
+            <div class="gallery__comment">
               <cite class="gallery__author-name">Антон</cite>
               <p class="gallery__time">12 часов назад</p>
-            </time>
+            </div>
             <p class="gallery__text">Соседи будут рады!</p>
           </li>
           <li class="gallery__item">
             <p class=" gallery__picture">
-              <img class="panorama__image image" src="http://placehold.it/150x100" width="150" height="100"
+              <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100"
                 alt="Memento">
             </p>
-            <time class="gallery__date visually-hidden" datetime="2017-09-29">
+            <div class="gallery__comment">
               <cite class="gallery__author-name">Борис</cite>
               <p class="gallery__time">20 часов назад</p>
-            </time>
+            </div>
             <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
           </li>
           <li class="gallery__item">
             <p class=" gallery__picture">
-              <img class="panorama__image image" src="http://placehold.it/150x100" width="150" height="100"
+              <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100"
                 alt="Watermelons">
             </p>
-            <time class="gallery__date visually-hidden" datetime="2017-09-29">
+            <div class="gallery__comment">
               <cite class="gallery__author-name">Сергей</cite>
               <p class="gallery__time">25 часов назад</p>
-            </time>
+            </div>
             <p class="gallery__text">Самая кубанская в мире!</p>
           </li>
           <li class="gallery__item">
             <p class=" gallery__picture">
-              <img class="panorama__image image" src="http://placehold.it/150x100" width="150" height="100" alt="Snow">
+              <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100" alt="Snow">
             </p>
-            <time class="gallery__date visually-hidden" datetime="2017-09-29">
+            <div class="gallery__comment">
               <cite class="gallery__author-name">Максим</cite>
               <p class="gallery__time">40 часов назад</p>
-            </time>
+            </div>
             <p class="gallery__text">Где снег-то?</p>
           </li>
           <li class="gallery__item">
             <p class=" gallery__picture">
-              <img class="panorama__image image" src="http://placehold.it/150x100" width="150" height="100" alt="GM">
+              <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100" alt="GM">
             </p>
-            <time class="gallery__date visually-hidden" datetime="2017-09-29">
+            <div class="gallery__comment">
               <cite class="gallery__author-name">Надежда</cite>
               <p class="gallery__time">45 часов назад</p>
-            </time>
+            </div>
             <p class="gallery__text">Всем GM и взаимные лайки!</p>
           </li>
         </ul>
