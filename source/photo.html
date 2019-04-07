@@ -14,20 +14,20 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
 
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a>Главная</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
 
     </nav>
     <b class="page-header__slogan slogan">Фотогафии пользователей</b>
@@ -45,7 +45,7 @@
           <img class="panorama__image image" src="http://placehold.it/150x100" width="150" height="100" alt="Panorama">
         </p>
         <div class="gallery__comment">
-          <cite class="gallery__author-name">Анна</cite>
+          <span class="gallery__author-name">Анна</span>
           <span class="gallery__time">(5 минут назад)</span>
         </div>
         <p class="gallery__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
@@ -60,18 +60,17 @@
               <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100" alt="Auto">
             </p>
             <div class="gallery__comment">
-              <cite class="gallery__author-name">Левон</cite>
+              <span class="gallery__author-name">Левон</span>
               <p class="gallery__time">5 часов назад</p>
             </div>
             <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           </li>
           <li class="gallery__item">
             <p class=" gallery__picture">
-              <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100"
-                alt="Drumms">
+              <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100" alt="Drumms">
             </p>
             <div class="gallery__comment">
-              <cite class="gallery__author-name">Антон</cite>
+              <span class="gallery__author-name">Антон</span>
               <p class="gallery__time">12 часов назад</p>
             </div>
             <p class="gallery__text">Соседи будут рады!</p>
@@ -82,7 +81,7 @@
                 alt="Memento">
             </p>
             <div class="gallery__comment">
-              <cite class="gallery__author-name">Борис</cite>
+              <span class="gallery__author-name">Борис</span>
               <p class="gallery__time">20 часов назад</p>
             </div>
             <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -93,7 +92,7 @@
                 alt="Watermelons">
             </p>
             <div class="gallery__comment">
-              <cite class="gallery__author-name">Сергей</cite>
+              <span class="gallery__author-name">Сергей</span>
               <p class="gallery__time">25 часов назад</p>
             </div>
             <p class="gallery__text">Самая кубанская в мире!</p>
@@ -103,7 +102,7 @@
               <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100" alt="Snow">
             </p>
             <div class="gallery__comment">
-              <cite class="gallery__author-name">Максим</cite>
+              <span class="gallery__author-name">Максим</span>
               <p class="gallery__time">40 часов назад</p>
             </div>
             <p class="gallery__text">Где снег-то?</p>
@@ -113,13 +112,56 @@
               <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100" alt="GM">
             </p>
             <div class="gallery__comment">
-              <cite class="gallery__author-name">Надежда</cite>
+              <span class="gallery__author-name">Надежда</span>
               <p class="gallery__time">45 часов назад</p>
             </div>
             <p class="gallery__text">Всем GM и взаимные лайки!</p>
           </li>
         </ul>
       </div>
+    </section>
+
+    <section class="posting">
+      <h2 class="visually-hidden">Поделитесь своими фотографиями</h2>
+      <b class="posting__slogan slogan">Затмите их всех!<br>
+        Выкладывайте все, что накопилось в<br>
+        телефоне!</b>
+
+      <form class="posting__filter" method="post" action="https://echo.htmlacademy.ru">
+        <p class=" posting__picture">
+          <img class="posting__image image" src="http://placehold.it/150x100" width="150" height="100" alt="User photo">
+        </p>
+        <fieldset class="filter-item">
+            <ul class="filter-item__list">
+              <li class="filter-option filter-option-on">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                name="photo-adjust" value="crop" id="filter-crop" checked>
+                <label for="filter-crop">Кроп</label>
+              </li>
+              <li class="filter-option filter-option-off">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                name="photo-adjust" value="color" id="filter-color">
+                <label for="filter-color">Перекрасить</label>
+              </li>
+              <li class="filter-option filter-option-off">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                name="photo-adjust" value="brightness" id="filter-brightness">
+                <label for="filter-brightness">Яркость</label>
+              </li>
+            </ul>
+        </fieldset>
+        <fieldset class="filter-item filter-item-controls">
+          <div class="range-controls">
+            <div class="range-controls__scale">
+              <div class="range-controls__bar"></div>
+            </div>
+            <div class="range-controls__toggle"></div>
+          </div>
+        </fieldset>
+
+        <button class="common-button" type="button">Запостить</button>
+        <button class="common-button" type="button">Отмена</button>
+      </form>
     </section>
   </main>
 
