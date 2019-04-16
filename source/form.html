@@ -31,117 +31,117 @@
       </ul>
 
     </nav>
-    <b class="page-header__slogan slogan">Конкурс на самое безбашенное путешествие с Пинк</b>
+    <b class="page-header__slogan">Конкурс на самое безбашенное путешествие с Пинк</b>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Pink - Поделитесь своей историей</h1>
     <section class="page-form">
       <h2 class="visually-hidden">Заполните форму</h2>
-      <b class="page-form__slogan slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
+      <b class="page-form__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
         вашу бонусную карту!</b>
-      <form class="competition" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="competition__filter-item filter-item">
+      <form class="page-form__competition competition" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="competition__filter-item">
           <legend class="visually-hidden">Как вас зовут</legend>
           <p class="competition__bio">
             <label class="visually-hidden" for="user-surname">Фамилия:</label><br>
-            <input class="competition-user" id="user-surname" type="text" name="login" required placeholder="Укажите фамилию*">
+            <input class="competition__user" id="user-surname" type="text" name="login" required placeholder="Укажите фамилию*">
           </p>
           <p class="competition__bio">
             <label class="visually-hidden" for="user-name">Имя:</label><br>
-            <input class="competition-user" id="user-name" type="text" name="login" required placeholder="Введите ваше имя*">
+            <input class="competition__user" id="user-name" type="text" name="login" required placeholder="Введите ваше имя*">
           </p>
           <p class="competition__bio">
             <label class="visually-hidden" for="user-patronymic">Отчество:</label> <br>
-            <input class="competition-user" id="user-patronymic" type="text" name="login"
+            <input class="competition__user" id="user-patronymic" type="text" name="login"
               placeholder="Ну и отчество тоже">
           </p>
         </fieldset>
 
-        <fieldset class="competition__filter-item achievment">
+        <fieldset class="competition__filter-item">
           <legend class="visually-hidden">Ваши достижения</legend>
-          <p class="achievment__slogan">
+          <p class="competition__slogan">
             Ваши безбашенные достижения в путешествии
           </p>
 
-          <ul class=" competition__achievment achievment-list">
-            <li class="achievment-list__item achievment-list__item--checked">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="selfi"
+          <ul class="competition__achievment">
+            <li class="competition__achievment-item competition__achievment-item--checked">
+              <input class="visually-hidden competition__achievment-input competition__achievment-checkbox" type="checkbox" name="selfi"
                 id="filter-selfi" checked>
               <label for="filter-selfi">Сделал селфи с акулой</label>
             </li>
-            <li class="achievment-list__item achievment-list__item--checked">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="beach"
+            <li class="competition__achievment-item competition__achievment-item--checked">
+              <input class="visually-hidden competition__achievment-input competition__achievment-checkbox" type="checkbox" name="beach"
                 id="filter-beach" checked>
               <label for="filter-beach">Обгорел на пляже</label>
             </li>
-            <li class="achievment-list__item">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="сhuck"
+            <li class="competition__achievment-item">
+              <input class="visually-hidden competition__achievment-input competition__achievment-checkbox" type="checkbox" name="сhuck"
                 id="filter-chuck">
               <label for="filter-chuck">Видел Чака Норриса</label>
             </li>
-            <li class="achievment-list__item">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="souvenir"
+            <li class="competition__achievment-item">
+              <input class="visually-hidden competition__achievment-input competition__achievment-checkbox" type="checkbox" name="souvenir"
                 id="filter-souvenir">
               <label for="filter-souvenir">Накупил сувениров</label>
             </li>
-            <li class="achievment-list__item achievment-list__item--checked">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="tower"
+            <li class="competition__achievment-item competition__achievment-item--checked">
+              <input class="visually-hidden competition__achievment-input competition__achievment-checkbox" type="checkbox" name="tower"
                 id="filter-tower" checked>
               <label for="filter-tower">Удержал башню</label>
             </li>
-            <li class="achievment-list__item">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel"
+            <li class="competition__achievment-item">
+              <input class="visually-hidden competition__achievment-input competition__achievment-checkbox" type="checkbox" name="hotel"
                 id="filter-hotel">
               <label for="filter-hotel">Разгромил отель</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="competition__filter-item user-contact">
+        <fieldset class="competition__filter-item">
           <legend class="visually-hidden">Как c вами связаться</legend>
-          <p class="user-contact__connection">
+          <p class="competition__filter-user">
             <label class="visually-hidden" for="user-phone">Номер телефона</label><br>
-            <input class="competition-user" id="user-phone" type="tel" name="tel" placeholder="Номер пожалуйста">
+            <input class="competition__user-input" id="user-phone" type="tel" name="tel" placeholder="Номер пожалуйста">
           </p>
-          <p class="user-contact__connection">
+          <p class="competition__filter-user">
             <label class="visually-hidden" for="user-mail">Адрес почты</label><br>
-            <input class="competition-user" id="user-mail" type="email" name="email" required placeholder="Введите почту*">
+            <input class="competition__user-input" id="user-mail" type="email" name="email" required placeholder="Введите почту*">
           </p>
         </fieldset>
 
-        <fieldset class="competition__filter-item user-application">
+        <fieldset class="competition__filter-item">
           <legend class="visually-hidden">Приложения</legend>
-          <p class="user-application__slogan">
+          <p class="competition__filter-question">
             С каким приложением путишествовали
           </p>
-          <ul class="competition-application application-list">
-            <li class="application-list__item application-list__item--on">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="application" value="ios"
-                id="filter-ios" checked>
+          <ul class="competition__application">
+            <li class="competition__application-item competition__application-item--on">
+              <input class="visually-hidden competition__application-input competition__application-radio" type="radio" name="application"
+              value="ios" id="filter-ios" checked>
               <label for="filter-ios">Pink для iOS</label>
             </li>
-            <li class="application-list__item application-list__item--on">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="application"
+            <li class="competition__application-item competition__application-item">
+              <input class="visually-hidden competition__application-input competition__application-radio" type="radio" name="application"
                 value="android" id="filter-android">
               <label for="filter-android">Pink на Android</label>
             </li>
-            <li class="application-list__item application-list__item--on">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="application"
+            <li class="competition__application-item competition__application-item">
+              <input class="visually-hidden competition__application-input competition__application-radio" type="radio" name="application"
                 value="windows" id="filter-windows">
               <label for="filter-windows">Windows Phone</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="competition__filter-item user-emotions">
+        <fieldset class="competition__filter-item">
           <legend class="visually-hidden">Эмоции</legend>
           <label for="user-emotions-area">
-            <b class="user-emotions__slogan">
+            <b class="competition__question">
               Опишите свои эмоции
             </b>
           </label>
-          <p class="user-emotions__item">
+          <p class="competition__question-item">
             <br>
             <textarea name="user-emotions-area" id="user-emotions-area"
               placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -175,21 +175,21 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__copyright">
+        <b class="page-footer__copyright-text">Разработано:</b>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
   </footer>
 
-  <section class="pop-up pop-up-ok">
+  <section class="pop-up  pop-up-ok">
     <h2 class="pop-up__notification">Ваша заявка отправлена</h2>
     <p class="pop-up__disclaimer">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
       оповестим вас.</p>
       <button class="pop-up__button" type="button">Закрыть окно</button>
   </section>
 
-  <section class="pop-up pop-up-wrong">
+  <section class="pop-up  pop-up-wrong">
     <h2 class="pop-up__notification">Что-то пошло не так</h2>
     <p class="pop-up__disclaimer">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="pop-up__button" type="button">Ок</button>

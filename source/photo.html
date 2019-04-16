@@ -39,17 +39,17 @@
     <section class="gallery">
       <h2 class="visually-hidden">Галерея</h2>
 
-      <div class="panorama-wrapper panorama">
-        <b class="gallery-slogan slogan">Взгляните на фотографии, которые выкладывают пользователи!
+      <div class="panorama">
+        <b class="panorama__slogan">Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?</b>
-        <p class=" gallery__picture gallery__panorama">
+        <p class=" panorama__picture">
           <img class="panorama__image image" src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="Panorama">
         </p>
-        <div class="gallery__comment">
-          <span class="gallery__author-name">Анна</span>
-          <span class="gallery__time">(5 минут назад)</span>
+        <div class="panorama__comment">
+          <span class="panorama__author-name">Анна</span>
+          <span class="panorama__time">(5 минут назад)</span>
         </div>
-        <p class="gallery__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
+        <p class="panorama__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
           перископе, задавайте свои вопросы!</p>
       </div>
 
@@ -124,39 +124,39 @@
 
     <section class="posting">
       <h2 class="visually-hidden">Поделитесь своими фотографиями</h2>
-      <b class="posting__slogan slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</b>
+      <b class="posting__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</b>
 
-      <form class="posting__filter" method="post" action="https://echo.htmlacademy.ru">
+      <form class="posting__filter filter" method="post" action="https://echo.htmlacademy.ru">
         <p class=" posting__picture">
-          <img class="posting__image image" src="http://placehold.it/150x100" width="150" height="100" alt="User photo">
+          <img class="posting__image" src="http://placehold.it/150x100" width="150" height="100" alt="User photo">
         </p>
-        <fieldset class="filter-item">
-            <ul class="filter-item__list">
-              <li class="filter-option filter-option-on">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio"
+        <fieldset class="filter__item">
+            <ul class="filter__item-list">
+              <li class="filter__item-option filter__item-option--on">
+                <input class="visually-hidden filter__item-input filter__item-input-radio" type="radio"
                 name="photo-adjust" value="crop" id="filter-crop" checked>
                 <label for="filter-crop">Кроп</label>
               </li>
-              <li class="filter-option filter-option-off">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio"
+              <li class="filter__item-option filter__item-option--off">
+                <input class="visually-hidden filter__item-input filter__item-input-radio" type="radio"
                 name="photo-adjust" value="color" id="filter-color">
                 <label for="filter-color">Перекрасить</label>
               </li>
-              <li class="filter-option filter-option-off">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio"
+              <li class="filter__item-option filter__item-option--off">
+                <input class="visually-hidden filter__item-input filter__item-input-radio" type="radio"
                 name="photo-adjust" value="brightness" id="filter-brightness">
                 <label for="filter-brightness">Яркость</label>
               </li>
             </ul>
         </fieldset>
-        <fieldset class="filter-item filter-item-controls">
-          <div class="filter-item-controls__range">
+        <fieldset class="filter__item filter-controls">
+          <div class="filter-controls__range">
             <input type="range" min="0" max="100" step="1" value="80">
           </div>
         </fieldset>
 
-        <button class="common-button" type="button">Запостить</button>
-        <button class="common-button" type="button">Отмена</button>
+        <button class="posting__button" type="button">Запостить</button>
+        <button class="posting__button" type="button">Отмена</button>
       </form>
     </section>
   </main>
@@ -180,9 +180,9 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__copyright">
+        <b class="page-footer__copyright-text">Разработано:</b>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
   </footer>
