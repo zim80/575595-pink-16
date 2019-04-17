@@ -4,28 +4,29 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Пинк">
+      <img class="page-header__logo-image" src="img\logo-pink-white-mobile.svg" width="75" height="23" alt="Пинк">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
 
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a>Главная</a>
+          <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item site-list__item--active">
-          <a href="photo.html">Фотографии</a>
+          <a class="site-list__link">Фотографии</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
+          <a class="site-list__link" href="form.html">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a href="#">HTML Academy</a>
+          <a class="site-list__link" href="#">HTML Academy</a>
         </li>
       </ul>
 
@@ -38,17 +39,17 @@
     <section class="gallery">
       <h2 class="visually-hidden">Галерея</h2>
 
-      <div class="panorama-wrapper panorama">
-        <b class="gallery-slogan slogan">Взгляните на фотографии, которые выкладывают пользователи!
+      <div class="panorama">
+        <b class="panorama__slogan">Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?</b>
-        <p class=" gallery__picture gallery__panorama">
-          <img class="panorama__image image" src="http://placehold.it/150x100" width="150" height="100" alt="Panorama">
+        <p class=" panorama__picture">
+          <img class="panorama__image image" src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="Panorama">
         </p>
-        <div class="gallery__comment">
-          <span class="gallery__author-name">Анна</span>
-          <span class="gallery__time">(5 минут назад)</span>
+        <div class="panorama__comment">
+          <span class="panorama__author-name">Анна</span>
+          <span class="panorama__time">(5 минут назад)</span>
         </div>
-        <p class="gallery__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
+        <p class="panorama__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
           перископе, задавайте свои вопросы!</p>
       </div>
 
@@ -57,63 +58,63 @@
         <ul class="gallery__list">
           <li class="gallery__item">
             <p class=" gallery__picture">
-              <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100" alt="Auto">
+              <img class="gallery__image image" src="../img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Auto">
             </p>
             <div class="gallery__comment">
               <span class="gallery__author-name">Левон</span>
-              <p class="gallery__time">5 часов назад</p>
+              <span class="gallery__time">(5 часов назад)</span>
             </div>
             <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           </li>
           <li class="gallery__item">
             <p class=" gallery__picture">
-              <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100" alt="Drumms">
+              <img class="gallery__image image" src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Drumms">
             </p>
             <div class="gallery__comment">
               <span class="gallery__author-name">Антон</span>
-              <p class="gallery__time">12 часов назад</p>
+              <span class="gallery__time">(12 часов назад)</span>
             </div>
             <p class="gallery__text">Соседи будут рады!</p>
           </li>
           <li class="gallery__item">
             <p class=" gallery__picture">
-              <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100"
+              <img class="gallery__image image" src="../img/photo-window-mobile@1x.jpg" width="280" height="180"
                 alt="Memento">
             </p>
             <div class="gallery__comment">
               <span class="gallery__author-name">Борис</span>
-              <p class="gallery__time">20 часов назад</p>
+              <span class="gallery__time">(20 часов назад)</span>
             </div>
             <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
           </li>
           <li class="gallery__item">
             <p class=" gallery__picture">
-              <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100"
+              <img class="gallery__image image" src="../img/photo-fair-mobile@1x.jpg" width="280" height="180"
                 alt="Watermelons">
             </p>
             <div class="gallery__comment">
               <span class="gallery__author-name">Сергей</span>
-              <p class="gallery__time">25 часов назад</p>
+              <span class="gallery__time">(25 часов назад)</span>
             </div>
             <p class="gallery__text">Самая кубанская в мире!</p>
           </li>
           <li class="gallery__item">
             <p class=" gallery__picture">
-              <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100" alt="Snow">
+              <img class="gallery__image image" src="../img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Snow">
             </p>
             <div class="gallery__comment">
               <span class="gallery__author-name">Максим</span>
-              <p class="gallery__time">40 часов назад</p>
+              <span class="gallery__time">(40 часов назад)</span>
             </div>
             <p class="gallery__text">Где снег-то?</p>
           </li>
           <li class="gallery__item">
             <p class=" gallery__picture">
-              <img class="gallery__image image" src="http://placehold.it/150x100" width="150" height="100" alt="GM">
+              <img class="gallery__image image" src="../img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="GM">
             </p>
             <div class="gallery__comment">
               <span class="gallery__author-name">Надежда</span>
-              <p class="gallery__time">45 часов назад</p>
+              <span class="gallery__time">(45 часов назад)</span>
             </div>
             <p class="gallery__text">Всем GM и взаимные лайки!</p>
           </li>
@@ -123,39 +124,39 @@
 
     <section class="posting">
       <h2 class="visually-hidden">Поделитесь своими фотографиями</h2>
-      <b class="posting__slogan slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</b>
+      <b class="posting__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</b>
 
-      <form class="posting__filter" method="post" action="https://echo.htmlacademy.ru">
+      <form class="posting__filter filter" method="post" action="https://echo.htmlacademy.ru">
         <p class=" posting__picture">
-          <img class="posting__image image" src="http://placehold.it/150x100" width="150" height="100" alt="User photo">
+          <img class="posting__image" src="http://placehold.it/150x100" width="150" height="100" alt="User photo">
         </p>
-        <fieldset class="filter-item">
-            <ul class="filter-item__list">
-              <li class="filter-option filter-option-on">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio"
+        <fieldset class="filter__item">
+            <ul class="filter__item-list">
+              <li class="filter__item-option filter__item-option--on">
+                <input class="visually-hidden filter__item-input filter__item-input-radio" type="radio"
                 name="photo-adjust" value="crop" id="filter-crop" checked>
                 <label for="filter-crop">Кроп</label>
               </li>
-              <li class="filter-option filter-option-off">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio"
+              <li class="filter__item-option filter__item-option--off">
+                <input class="visually-hidden filter__item-input filter__item-input-radio" type="radio"
                 name="photo-adjust" value="color" id="filter-color">
                 <label for="filter-color">Перекрасить</label>
               </li>
-              <li class="filter-option filter-option-off">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio"
+              <li class="filter__item-option filter__item-option--off">
+                <input class="visually-hidden filter__item-input filter__item-input-radio" type="radio"
                 name="photo-adjust" value="brightness" id="filter-brightness">
                 <label for="filter-brightness">Яркость</label>
               </li>
             </ul>
         </fieldset>
-        <fieldset class="filter-item filter-item-controls">
-          <div class="filter-item-controls__range">
+        <fieldset class="filter__item filter-controls">
+          <div class="filter-controls__range">
             <input type="range" min="0" max="100" step="1" value="80">
           </div>
         </fieldset>
 
-        <button class="common-button" type="button">Запостить</button>
-        <button class="common-button" type="button">Отмена</button>
+        <button class="posting__button" type="button">Запостить</button>
+        <button class="posting__button" type="button">Отмена</button>
       </form>
     </section>
   </main>
@@ -163,10 +164,9 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Пинк">
+        <img class="page-footer__logo-image" src="../img/logo-pink-blue-mobile.svg" width="150" height="100" alt="Пинк">
       </a>
       <div class="page-footer__social social">
-        <b class="social__title">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/Pink">Мы в Твиттере</a>
@@ -180,9 +180,9 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__copyright">
+        <b class="page-footer__copyright-text">Разработано:</b>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
   </footer>
