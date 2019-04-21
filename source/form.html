@@ -10,7 +10,7 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image"src="img\logo-pink-white-mobile.svg" width="75" height="23" alt="Пинк">
+      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Пинк">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -44,15 +44,15 @@
         <fieldset class="competition__filter-item">
           <legend class="visually-hidden">Как вас зовут</legend>
           <p class="competition__bio">
-            <label class="visually-hidden" for="user-surname">Фамилия:</label><br>
+            <label class="competition__fullname" for="user-surname">Фамилия:</label><br>
             <input class="competition__user" id="user-surname" type="text" name="login" required placeholder="Укажите фамилию*">
           </p>
           <p class="competition__bio">
-            <label class="visually-hidden" for="user-name">Имя:</label><br>
+            <label class="competition__fullname" for="user-name">Имя:</label><br>
             <input class="competition__user" id="user-name" type="text" name="login" required placeholder="Введите ваше имя*">
           </p>
           <p class="competition__bio">
-            <label class="visually-hidden" for="user-patronymic">Отчество:</label> <br>
+            <label class="competition__fullname" for="user-patronymic">Отчество:</label> <br>
             <input class="competition__user" id="user-patronymic" type="text" name="login"
               placeholder="Ну и отчество тоже">
           </p>
@@ -101,12 +101,12 @@
         <fieldset class="competition__filter-item">
           <legend class="visually-hidden">Как c вами связаться</legend>
           <p class="competition__filter-user">
-            <label class="visually-hidden" for="user-phone">Номер телефона</label><br>
-            <input class="competition__user-input" id="user-phone" type="tel" name="tel" placeholder="Номер пожалуйста">
+            <label class="competition__user-contact" for="user-phone">Номер телефона</label><br>
+            <input class="competition__user" id="user-phone" type="tel" name="tel" placeholder="Номер пожалуйста">
           </p>
           <p class="competition__filter-user">
-            <label class="visually-hidden" for="user-mail">Адрес почты</label><br>
-            <input class="competition__user-input" id="user-mail" type="email" name="email" required placeholder="Введите почту*">
+            <label class="competition__user-contact" for="user-mail">Адрес почты</label><br>
+            <input class="competition__user" id="user-mail" type="email" name="email" required placeholder="Введите почту*">
           </p>
         </fieldset>
 
@@ -143,13 +143,13 @@
           </label>
           <p class="competition__question-item">
             <br>
-            <textarea name="user-emotions-area" id="user-emotions-area"
+            <textarea name="user-emotions-area" id="user-emotions-area" rows="5" cols="35"
               placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </p>
         </fieldset>
         <button class="page-form__button" type="submit">Отправить форму</button>
         <p class="page-form__important-fields">
-          * — обязательные поля
+          <span class="page-form__important-asterix">*</span><span class="page-form__important-text"> — обязательные поля</span>
         </p>
       </form>
     </section>
@@ -194,8 +194,6 @@
     <p class="pop-up__disclaimer">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="pop-up__button" type="button">Ок</button>
   </section>
-  </section>
-
 </body>
 
 </html>
